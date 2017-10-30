@@ -10,11 +10,12 @@ contract mortal {
         else{
             throw;
         }
-        function mortal(){
+    }
+        function mortal() {
             owner=msg.sender;
         }
-        function suicide() onlyowner{
+        function kill() onlyowner{
             suicide(owner);
         }
-    }
 }
+
