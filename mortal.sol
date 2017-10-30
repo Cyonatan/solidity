@@ -1,7 +1,7 @@
 pragma solidity ^0.4.0
 
 contract mortal {
-    adress owner;
+    address owner;
     
     modifier onlyowner(){
         if (owner==msg.sender){
